@@ -1,0 +1,233 @@
+[
+  {
+    "sector": "enti-pubblici",
+    "group": "Sale consiliari e congressi",
+    "name": "Conference system",
+    "description": "Sistemi microfonici e di gestione degli interventi per aule consiliari, sale conferenze e congressi, con soluzioni per la registrazione delle sedute.",
+    "id": "pubblico-conference-system"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Sale consiliari e congressi",
+    "name": "Votazione elettronica",
+    "description": "Sistemi di votazione integrati con gli impianti per le sedute, con gestione e visualizzazione dei risultati su schermi e tabelloni.",
+    "id": "pubblico-votazione-elettronica"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Sale consiliari e congressi",
+    "name": "Traduzione simultanea",
+    "description": "Apparecchiature per l’interpretazione e la distribuzione delle lingue durante convegni e incontri, con ricevitori e cabine per gli interpreti.",
+    "id": "pubblico-traduzione-simultanea"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Sale consiliari e congressi",
+    "name": "Arredi per aule e sale",
+    "description": "Arredi per aule consiliari e sale conferenze, realizzabili su misura e coordinati con le esigenze degli impianti e degli spazi.",
+    "id": "pubblico-arredi-per-aule-e-sale"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Audio, video e comunicazione",
+    "name": "Sonorizzazione professionale",
+    "description": "Impianti audio per la voce e la musica in spazi pubblici, sale e grandi ambienti, con progettazione in funzione delle condizioni acustiche e dell’utilizzo.",
+    "id": "pubblico-sonorizzazione-professionale"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Audio, video e comunicazione",
+    "name": "Bando pubblico",
+    "description": "Sistemi di diffusione sonora per gli avvisi alla cittadinanza, con configurazioni a una o più postazioni e modalità di gestione da definire secondo il territorio.",
+    "id": "pubblico-bando-pubblico"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Audio, video e comunicazione",
+    "name": "Videoproiezione e multimedia",
+    "description": "Proiettori, schermi e sistemi audiovisivi per sale e ambienti pubblici, integrati con le sorgenti video e con gli impianti di amplificazione.",
+    "id": "pubblico-videoproiezione-e-multimedia"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Audio, video e comunicazione",
+    "name": "Streaming e videoconferenza",
+    "description": "Sistemi audiovisivi per incontri a distanza, collegamenti in videoconferenza e trasmissione di contenuti.",
+    "id": "pubblico-streaming-e-videoconferenza"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Audio, video e comunicazione",
+    "name": "Messaggistica informativa",
+    "description": "Sistemi a messaggio variabile per la comunicazione dinamica, l’informazione stradale e gli avvisi alla popolazione.",
+    "id": "pubblico-messaggistica-informativa"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Impianti e sicurezza",
+    "name": "Impianti elettrici",
+    "description": "Progettazione e installazione di impianti elettrici per gli edifici e gli ambienti dell’ente, con soluzioni dimensionate sulle esigenze di utilizzo.",
+    "id": "pubblico-impianti-elettrici"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Impianti e sicurezza",
+    "name": "Illuminazione e domotica",
+    "description": "Illuminazione ambientale e artistica, automazioni e controllo coordinato degli impianti per la gestione degli spazi.",
+    "id": "pubblico-illuminazione-e-domotica"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Impianti e sicurezza",
+    "name": "Antifurto e videosorveglianza",
+    "description": "Sistemi per la protezione e il controllo di edifici, beni e aree, progettati secondo le caratteristiche dei luoghi.",
+    "id": "pubblico-antifurto-e-videosorveglianza"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Edifici e patrimonio",
+    "name": "Orologeria pubblica",
+    "description": "Orologi da torre e da piazza, con quadranti e lancette scelti secondo le dimensioni e il carattere architettonico degli edifici.",
+    "id": "pubblico-orologeria-pubblica"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Edifici e patrimonio",
+    "name": "Automazione campane",
+    "description": "Sistemi per il movimento e il suono delle campane di edifici comunali, con programmazione e assistenza degli impianti.",
+    "id": "pubblico-automazione-campane"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Edifici e patrimonio",
+    "name": "Allontanamento volatili",
+    "description": "Sistemi di dissuasione per tetti, facciate, monumenti e torri, studiati in relazione agli elementi da proteggere.",
+    "id": "pubblico-allontanamento-volatili"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Audio e liturgia",
+    "name": "Amplificazione audio",
+    "description": "Impianti per la voce e la musica, fissi e portatili, per gli ambienti interni ed esterni della parrocchia. Soluzioni studiate in funzione dell’acustica e della comprensibilità della parola.",
+    "id": "religioso-amplificazione-audio"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Audio e liturgia",
+    "name": "Radio parrocchiali",
+    "description": "Sistemi per condividere celebrazioni, incontri di preghiera e attività parrocchiali con chi non può essere presente in chiesa.",
+    "id": "religioso-radio-parrocchiali"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Audio e liturgia",
+    "name": "Videoproiezione",
+    "description": "Videoproiettori, schermi e impianti multimediali per incontri, catechesi ed eventi. Configurazioni fisse o portatili secondo gli spazi e le modalità di utilizzo.",
+    "id": "religioso-videoproiezione"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Audio e liturgia",
+    "name": "Riproduzione organo",
+    "description": "Sistemi digitali di riproduzione del suono dell’organo a supporto dell’accompagnamento musicale delle celebrazioni.",
+    "id": "religioso-riproduzione-organo"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Campane e campanili",
+    "name": "Impianti campanari",
+    "description": "Campane in bronzo, automazioni, programmatori e strutture di sostegno. Progettazione, installazione e assistenza dei sistemi per il suono delle campane.",
+    "id": "religioso-impianti-campanari"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Campane e campanili",
+    "name": "Riproduzione campane",
+    "description": "Sistemi digitali per la riproduzione del suono delle campane, destinati a luoghi privi di campanile o a integrazione degli impianti esistenti.",
+    "id": "religioso-riproduzione-campane"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Campane e campanili",
+    "name": "Orologi da torre",
+    "description": "Orologi per campanili e piazze, con quadranti e lancette scelti in funzione dell’architettura e delle dimensioni dell’edificio.",
+    "id": "religioso-orologi-da-torre"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Campane e campanili",
+    "name": "Allontanamento volatili",
+    "description": "Soluzioni di dissuasione per celle campanarie, coperture e facciate, studiate in relazione alle caratteristiche dell’edificio.",
+    "id": "religioso-allontanamento-volatili"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Impianti e sicurezza",
+    "name": "Impianti elettrici e illuminazione",
+    "description": "Progettazione e realizzazione di impianti elettrici e di illuminazione per le chiese, con attenzione alla funzionalità degli ambienti e alla valorizzazione degli elementi architettonici.",
+    "id": "religioso-impianti-elettrici-e-illuminazione"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Impianti e sicurezza",
+    "name": "Riscaldamento",
+    "description": "Sistemi di riscaldamento per chiese e locali parrocchiali, comprese soluzioni per zone circoscritte da valutare in base all’uso degli spazi.",
+    "id": "religioso-riscaldamento"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Impianti e sicurezza",
+    "name": "Climatizzazione",
+    "description": "Impianti per il comfort degli ambienti parrocchiali, con configurazioni centralizzate o indipendenti selezionate secondo le esigenze dei locali.",
+    "id": "religioso-climatizzazione"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Impianti e sicurezza",
+    "name": "Impianti antintrusione",
+    "description": "Sistemi di sicurezza a filo o via radio per la protezione degli ambienti della parrocchia, configurabili in funzione degli accessi e delle aree da controllare.",
+    "id": "religioso-impianti-antintrusione"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Impianti e sicurezza",
+    "name": "Domotica",
+    "description": "Integrazione e controllo degli impianti: illuminazione, riscaldamento, accessi e sistemi audiovisivi. Comandi coordinati e gestione a distanza secondo le necessità della parrocchia.",
+    "id": "religioso-domotica"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Arredi e spazi",
+    "name": "Vetrate e mosaici artistici",
+    "description": "Progettazione di vetrate istoriate e mosaici, in collaborazione con laboratori artigiani specializzati. Soluzioni per nuove opere e interventi su vetrate esistenti.",
+    "id": "religioso-vetrate-e-mosaici-artistici"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Arredi e spazi",
+    "name": "Arredi sacri e parrocchiali",
+    "description": "Banchi, altari, amboni, confessionali, sedi e mobili per la chiesa, l’ufficio parrocchiale e la catechesi. Forniture anche su misura.",
+    "id": "religioso-arredi-sacri-e-parrocchiali"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Arredi e spazi",
+    "name": "Allestimento oratori",
+    "description": "Arredi, giochi, impianti audio e video e soluzioni per il comfort: un insieme di forniture coordinate per gli spazi di incontro della comunità.",
+    "id": "religioso-allestimento-oratori"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Arredi e spazi",
+    "name": "Informatica",
+    "description": "Computer, accessori, installazione e assistenza per le attività della parrocchia. Servizi informatici a supporto del lavoro e della comunicazione della comunità.",
+    "id": "religioso-informatica"
+  },
+  {
+    "sector": "enti-religiosi",
+    "group": "Arredi e spazi",
+    "name": "Armadi di sicurezza",
+    "description": "Casseforti e armadi blindati per la custodia di oggetti e documenti, con dimensioni e sistemi di chiusura adatti alle esigenze dei locali.",
+    "id": "religioso-armadi-di-sicurezza"
+  }
+]

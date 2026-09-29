@@ -8,7 +8,7 @@
     if (document.hidden || sent) { scheduled = false; return; }
     try { if (Date.now() - Number(sessionStorage.getItem(key)) < 30 * 60 * 1000) return; } catch {}
     sent = true;
-    const section = location.hash.slice(1), allowed = ['inizio','soluzioni','menestrello','esperienza','connect','contatti'];
+    const section = location.hash.slice(1), allowed = ['servizi-pubblici','servizi-religiosi','azienda','offerte','lavori-eseguiti','assistenza','inizio','soluzioni','menestrello','esperienza','connect','contatti'];
     try {
       const response = await fetch('https://otc-notify.80.225.86.224.sslip.io/visit', {
         method: 'POST', mode: 'cors', credentials: 'omit', referrerPolicy: 'no-referrer',

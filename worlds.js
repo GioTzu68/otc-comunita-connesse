@@ -35,13 +35,12 @@
         dispatchEvent(new Event('scroll')); entering = false;
       };
       if (reduced.matches || document.documentElement.classList.contains('motion-paused') || !door.animate) { finish(); return; }
-      const overlay = document.createElement('div'); overlay.className = 'world-transition'; overlay.setAttribute('aria-hidden', 'true');
-      overlay.append(door.querySelector('img').cloneNode()); document.body.append(overlay);
-      const r = door.getBoundingClientRect();
-      const initial = `inset(${Math.max(0,r.top)}px ${Math.max(0,innerWidth-r.right)}px ${Math.max(0,innerHeight-r.bottom)}px ${Math.max(0,r.left)}px)`;
-      overlay.animate([{ clipPath: initial }, { clipPath: 'inset(0px 0px 0px 0px)' }], { duration: 520, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'forwards' }).finished.then(() => {
-        finish(); return overlay.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 360 }).finished;
-      }).catch(() => { if (entering) finish(); }).finally(() => overlay.remove());
+      const photo = door.querySelector('.door-photo');
+      const movement = photo.animate([
+        { transform: getComputedStyle(photo).transform },
+        { transform: 'scale(1.3)' }
+      ], { duration: 280, easing: 'ease-out' });
+      movement.finished.then(finish).catch(() => { if (entering) finish(); });
     });
   });
   const audioButton = document.querySelector('#gateway-audio');

@@ -57,12 +57,11 @@
       choice={value:consent?'yes':'no',expires:Date.now()+90*86400000};write(localStorage,choiceKey,choice);
       sections.clear();services.clear();events.clear();seconds=0;
       if (consent) loadProfile(); else {remove(localStorage,profileKey);delete session.visitor;write(sessionStorage,sessionKey,session);}
-      dirty=true;attempts=0;lastSent=0;panel.remove();panel=null;preferences.textContent='Dettagli visite: '+(consent?'autorizzati':'solo apertura');send();
+      dirty=true;attempts=0;lastSent=0;panel.remove();panel=null;preferences.textContent='Preferenze visite'+(consent?' · dettagli attivi':'');send();
     });
   }
-  const preferences=document.createElement('button');preferences.type='button';preferences.className='visit-settings';preferences.textContent='Dettagli visite: '+(consent?'autorizzati':'solo apertura');preferences.addEventListener('click',showPreferences);
-  document.querySelector('footer')?.append(preferences);
-  if (!choice) showPreferences();
+  const preferences=document.createElement('button');preferences.type='button';preferences.className='visit-settings';preferences.textContent='Preferenze visite'+(consent?' · dettagli attivi':'');preferences.addEventListener('click',showPreferences);
+  (document.querySelector('.visit-notice') || document.querySelector('footer'))?.append(preferences);
   document.addEventListener('toggle',e=>{if (e.target.matches?.('details.service-item[open]')) mark(services,e.target.id);},true);
   document.addEventListener('click',e=>{
     const el=e.target.closest('a,button');if (!el) return;

@@ -9,11 +9,11 @@ async function boot(localStorage,sessionStorage,statuses=[]){
  const context={document,localStorage,sessionStorage,location:{origin:'https://giotzu68.github.io',pathname:'/otc-comunita-connesse/',hash:'#esperienza'},crypto:require('crypto').webcrypto,Date:ClockDate,Set,JSON,Number,Math,innerHeight:800,AbortSignal,console:{info(){}},IntersectionObserver:class{observe(){}},setTimeout:fn=>timers.push(fn),setInterval:fn=>timers.push(fn),fetch:async(url,opt)=>{requests.push({url,data:JSON.parse(opt.body)});const status=statuses.shift()||200;return{ok:status===200,status,json:async()=>({token:'e'.repeat(64)})};},window:{addEventListener(){}}};
  vm.runInNewContext(code,context);
  const tick=async()=>{for(const fn of timers)fn();await new Promise(r=>setImmediate(r));};
- const choose=async value=>{const panel=elements.findLast(e=>e.click&&!e.removed);panel.click({target:{closest:()=>({dataset:{choice:value}})}});await new Promise(r=>setImmediate(r));};
+ const choose=async value=>{let panel=elements.findLast(e=>e.className==='visit-preferences'&&!e.removed);if(!panel){elements.find(e=>e.className==='visit-settings').click();panel=elements.findLast(e=>e.className==='visit-preferences'&&!e.removed);}panel.click({target:{closest:()=>({dataset:{choice:value}})}});await new Promise(r=>setImmediate(r));};
  return{requests,tick,choose,elements,listeners,advance(ms){clock+=ms;}};
 }
 (async()=>{
- const local=memory(),session=memory();let app=await boot(local,session);await app.tick();assert.equal(app.requests[0].data.consent,false);assert(!('visitor'in app.requests[0].data));
+ const local=memory(),session=memory();let app=await boot(local,session);assert(!app.elements.some(e=>e.className==='visit-preferences'));assert.equal(local.getItem('otc-visitor-v2'),null);await app.tick();assert.equal(app.requests[0].data.consent,false);assert(!('visitor'in app.requests[0].data));
  await app.choose('yes');assert.equal(app.requests[1].data.consent,true);assert.equal(app.requests[1].data.count,1);assert.equal(app.requests[1].url.endsWith('/visit/update'),true);
  const id=app.requests[1].data.visitor;
  app=await boot(local,session);await app.tick();assert.equal(app.requests[0].data.count,1);assert.equal(app.requests[0].data.visitor,id);

@@ -17,3 +17,9 @@ La pubblicazione avviene dal ramo `main`, cartella principale, tramite GitHub Pa
 ## Notifiche visite
 
 Avviso Telegram all’apertura; dettagli e riconoscimento dei ritorni facoltativi, con preferenze modificabili nel footer. La gestione richiede il servizio esterno descritto in [notification-service/README.md](notification-service/README.md). Attivare prima il servizio aggiornato, poi pubblicare il frontend.
+
+## Ingresso fotografico
+
+Due ambiti con zoom al passaggio del mouse e transizione verso i cataloghi. Tre percorsi fotografici per ambito collegano audio, luce e arredi alle schede dei servizi. Le anteprime funzionano anche con il focus da tastiera; su telefono il tocco apre la scheda. Le preferenze di movimento ridotto disattivano le animazioni.
+
+L’audio segue l’ambito selezionato: Comunità per gli enti pubblici, Cattedrale con frasi latine e traduzione per gli enti religiosi. Il primo clic può essere necessario per consentire la riproduzione nel browser; il comando audio permette sempre di disattivarla.

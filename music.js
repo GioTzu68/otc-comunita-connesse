@@ -2,6 +2,7 @@
 (() => {
   const $ = s => document.querySelector(s), root = document.documentElement;
   const toggle = $('#sound-toggle'), subtitle = $('#latin-subtitle');
+  let previewTheme = null;
   let enabled = true, theme = 'public', section = '', ctx, master, compressor;
   let bed = null, bedGeneration = 0, bedLoading = false, narration = null, latinTimer, captionTimer;
   let latinGeneration = 0, latinIndex = 0, announcementCount = 0, scrollFrame = 0, wordFrame = 0;
@@ -120,7 +121,7 @@
   }
   function setSection(next) {
     const element = document.querySelector(next); if (!element) return;
-    const newTheme = element.dataset.atmosphere || 'public';
+    const newTheme = previewTheme || element.dataset.atmosphere || 'public';
     if (section === next && theme === newTheme) return;
     section = next;
     if (theme !== newTheme) { theme = newTheme; bedGeneration++; bedLoading = false; stopLatin(); if (enabled && ready()) startBed(); }
@@ -150,6 +151,12 @@
   // Shared audio output: one volume, one mute switch, no device-dependent voice selection.
   window.OTCAudio = {
     catalog,
+    previewSector(value) {
+      const next = value === "religious" || value === "public" ? value : null;
+      if (next === previewTheme) return;
+      previewTheme = next; trackSection();
+      if (theme === "religious") { clearTimeout(latinTimer); latinTimer = null; scheduleLatin(1200); }
+    },
     enable() { enabled = true; activate(); emit(); },
     async speak(url, signal) {
       ensureContext(); await ctx.resume(); if (signal.aborted) throw new DOMException('Aborted', 'AbortError');

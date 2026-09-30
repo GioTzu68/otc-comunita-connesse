@@ -13,3 +13,7 @@ Demo pubblica del sito OTC su GitHub Pages.
 Questa versione è statica e utilizza esclusivamente audio già pronti. Non comprende la sintesi dei testi personalizzati.
 
 La pubblicazione avviene dal ramo `main`, cartella principale, tramite GitHub Pages.
+
+## Notifiche visite
+
+Avviso Telegram all’apertura; dettagli e riconoscimento dei ritorni facoltativi, con preferenze modificabili nel footer. La gestione richiede il servizio esterno descritto in [notification-service/README.md](notification-service/README.md). Attivare prima il servizio aggiornato, poi pubblicare il frontend.

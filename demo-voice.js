@@ -17,7 +17,7 @@
   }
   async function play(manual) {
     if (playing || !field.value.trim() || !examples.length) return;
-    if (manual) window.OTCAudio.enable();
+    if (manual) { window.OTCAudio.enable(); document.dispatchEvent(new CustomEvent('otc:visit-audio',{detail:'demo-listen'})); }
     if (!manual && !eligible()) return;
     const current = ++version; controller = new AbortController(); const activeController = controller; const signal = activeController.signal;
     playing = true; render(); note.textContent = 'Preparazione della voce Menestrello…'; let blobUrl, timeout;
@@ -28,6 +28,7 @@
       await window.OTCAudio.speak(url, signal);
       if (current !== version) return;
       playing = false; controller = null; render();
+      if (manual) document.dispatchEvent(new CustomEvent('otc:visit-audio',{detail:'demo-complete'}));
       if (!custom && !paused) {
         nextTimer = setTimeout(() => { nextTimer = null; if (!eligible() || paused || custom) return; index = (index + 1) % examples.length; showExample(); schedule(600); }, 4500);
       } else note.textContent = 'Ascolto completato.';

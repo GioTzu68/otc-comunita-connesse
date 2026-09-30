@@ -34,6 +34,7 @@
     sending = true; const body = JSON.stringify(payload());
     try {
       const response = await fetch(endpoint+(token?'/visit/update':'/visit'),{method:'POST',mode:'cors',credentials:'omit',referrerPolicy:'no-referrer',headers:{'Content-Type':'application/json'},body,signal:AbortSignal.timeout(15000)});
+      if (response.status === 429) { lastSent=Date.now(); attempts=0; return; }
       if (!response.ok) throw new Error('unavailable');
       const result = await response.json();
       if (result.token) { token=result.token; session.token=token; write(sessionStorage,sessionKey,session); }

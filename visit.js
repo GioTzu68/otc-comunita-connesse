@@ -37,6 +37,7 @@
       if (response.status === 429) { lastSent=Date.now(); attempts=0; return; }
       if (!response.ok) throw new Error('unavailable');
       const result = await response.json();
+      if (['sent','updated'].includes(result.status)) console.info('OTC visit notification: '+result.status);
       if (result.token) { token=result.token; session.token=token; write(sessionStorage,sessionKey,session); }
       if (!token) { dirty=false; attempts=3; } // Server suppression or old endpoint: never resend.
       else { dirty=body!==JSON.stringify(payload()); attempts=0; }

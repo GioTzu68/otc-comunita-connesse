@@ -85,3 +85,5 @@ header .nav-actions{gap:16px}.audio-switch{display:flex;align-items:center;gap:9
 .motion-paused .service-art{transition:none;transform:none!important}.motion-paused .service-opened .service-media .service-art,.motion-paused .island-flying .island-camera img{animation:none!important}
 
 .island-tagline .eyebrow{color:#e9e1c9;text-shadow:0 2px 12px #173d39}
+
+.company-section .island-tagline p{color:#e9e1c9;font-size:10px;text-shadow:0 2px 12px #173d39}

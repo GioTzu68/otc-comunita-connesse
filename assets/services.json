@@ -229,5 +229,12 @@
     "name": "Armadi di sicurezza",
     "description": "Casseforti e armadi blindati per la custodia di oggetti e documenti, con dimensioni e sistemi di chiusura adatti alle esigenze dei locali.",
     "id": "religioso-armadi-di-sicurezza"
+  },
+  {
+    "sector": "enti-pubblici",
+    "group": "Audio, video e comunicazione",
+    "name": "Siti web per enti pubblici",
+    "description": "Progettiamo siti web per Comuni ed enti pubblici: identità visiva curata, informazioni organizzate e percorsi semplici per i cittadini. Affianchiamo l’ente nella definizione dei contenuti, nello sviluppo e nella gestione, con attenzione all’accessibilità e ai modelli di riferimento per la Pubblica Amministrazione. Integrazioni, manutenzione e requisiti vengono definiti nel progetto.",
+    "id": "pubblico-siti-web"
   }
 ]

@@ -1,0 +1,274 @@
+{
+  "religioso-amplificazione-audio": {
+    "sheet": "assets/details-main.webp",
+    "x": 0,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-impianti-elettrici-e-illuminazione": {
+    "sheet": "assets/details-main.webp",
+    "x": 512,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-arredi-sacri-e-parrocchiali": {
+    "sheet": "assets/details-main.webp",
+    "x": 1024,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-conference-system": {
+    "sheet": "assets/details-main.webp",
+    "x": 0,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-illuminazione-e-domotica": {
+    "sheet": "assets/details-main.webp",
+    "x": 512,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-arredi-per-aule-e-sale": {
+    "sheet": "assets/details-main.webp",
+    "x": 1024,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-radio-parrocchiali": {
+    "sheet": "assets/details-0.webp",
+    "x": 0,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-videoproiezione": {
+    "sheet": "assets/details-0.webp",
+    "x": 512,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-riproduzione-organo": {
+    "sheet": "assets/details-0.webp",
+    "x": 1024,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-impianti-campanari": {
+    "sheet": "assets/details-0.webp",
+    "x": 0,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-riproduzione-campane": {
+    "sheet": "assets/details-0.webp",
+    "x": 512,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-orologi-da-torre": {
+    "sheet": "assets/details-0.webp",
+    "x": 1024,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-allontanamento-volatili": {
+    "sheet": "assets/details-1.webp",
+    "x": 0,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-riscaldamento": {
+    "sheet": "assets/details-1.webp",
+    "x": 512,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-climatizzazione": {
+    "sheet": "assets/details-1.webp",
+    "x": 1024,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-impianti-antintrusione": {
+    "sheet": "assets/details-1.webp",
+    "x": 0,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-domotica": {
+    "sheet": "assets/details-1.webp",
+    "x": 512,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-vetrate-e-mosaici-artistici": {
+    "sheet": "assets/details-1.webp",
+    "x": 1024,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-allestimento-oratori": {
+    "sheet": "assets/details-2.webp",
+    "x": 0,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-informatica": {
+    "sheet": "assets/details-2.webp",
+    "x": 512,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "religioso-armadi-di-sicurezza": {
+    "sheet": "assets/details-2.webp",
+    "x": 1024,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-votazione-elettronica": {
+    "sheet": "assets/details-2.webp",
+    "x": 0,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-traduzione-simultanea": {
+    "sheet": "assets/details-2.webp",
+    "x": 512,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-sonorizzazione-professionale": {
+    "sheet": "assets/details-2.webp",
+    "x": 1024,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-bando-pubblico": {
+    "sheet": "assets/details-3.webp",
+    "x": 0,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-videoproiezione-e-multimedia": {
+    "sheet": "assets/details-3.webp",
+    "x": 512,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-streaming-e-videoconferenza": {
+    "sheet": "assets/details-3.webp",
+    "x": 1024,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-messaggistica-informativa": {
+    "sheet": "assets/details-3.webp",
+    "x": 0,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-impianti-elettrici": {
+    "sheet": "assets/details-3.webp",
+    "x": 512,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-antifurto-e-videosorveglianza": {
+    "sheet": "assets/details-3.webp",
+    "x": 1024,
+    "y": 512,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-orologeria-pubblica": {
+    "sheet": "assets/details-4.webp",
+    "x": 0,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-automazione-campane": {
+    "sheet": "assets/details-4.webp",
+    "x": 512,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-allontanamento-volatili": {
+    "sheet": "assets/details-4.webp",
+    "x": 1024,
+    "y": 0,
+    "width": 1536,
+    "height": 1024,
+    "cell": 512
+  },
+  "pubblico-siti-web": {
+    "sheet": "assets/web-service.webp",
+    "x": 0,
+    "y": 0,
+    "width": 1254,
+    "height": 1254,
+    "cell": 1254
+  }
+}

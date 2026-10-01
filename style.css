@@ -38,3 +38,50 @@ header .nav-actions{gap:16px}.audio-switch{display:flex;align-items:center;gap:9
 .world-door:hover .door-photo,.world-door:focus-visible .door-photo{transform:scale(1.25)}
 @media(prefers-reduced-motion:reduce){.cinema-photo.cinema-exploring{animation:none;transform:none}.world-door:hover .door-photo,.world-door:focus-visible .door-photo{transform:none}}
 .motion-paused .cinema-photo.cinema-exploring{animation:none;transform:none}
+
+/* Original photographic details: a distinct close-up for every service. */
+.service-art{display:block;width:100%;height:100%;overflow:hidden;transform-origin:50% 50%;transition:transform 1.4s cubic-bezier(.2,.65,.2,1),filter 1s}
+.service-item summary{gap:18px;padding:18px 0;position:relative;overflow:hidden}
+.service-item summary>.service-thumb{display:block;width:112px;height:94px;flex:0 0 112px;border-radius:3px;overflow:hidden;background:#203e36;transform:none!important}
+.service-item summary>.service-title{font-size:16px;color:var(--ink);flex:1;flex-shrink:1;transform:none!important}
+.service-item summary>.service-open{font-size:22px;flex:0 0 22px}
+.service-item summary:hover .service-art,.service-item summary:focus-visible .service-art{transform:scale(1.3);filter:brightness(1.08)}
+.service-media{position:relative;height:320px;overflow:hidden;background:#183b36;margin-bottom:20px;border-radius:3px;isolation:isolate}
+.service-media:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 60%,#0b2928aa);pointer-events:none}
+.service-media-caption{position:absolute;bottom:16px;left:18px;right:18px;z-index:1;color:white;font-size:10px;letter-spacing:1px;text-transform:uppercase}
+.service-opened .service-media .service-art{animation:service-dolly 3s cubic-bezier(.22,.7,.2,1) forwards}
+.service-media:hover .service-art{transform:scale(1.25)}
+@keyframes service-dolly{from{transform:scale(1)}to{transform:scale(1.28)}}
+.cinema-photo>.service-art{transition:none}
+.cinema-photo.cinema-exploring{animation:cinema-focus 3s cubic-bezier(.2,.65,.2,1) forwards}
+.world-door:after{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--shine-x,50%) var(--shine-y,30%),#fff7cb22,transparent 45%);opacity:0;transition:opacity 1s;pointer-events:none}
+.world-door:hover:after,.world-door:focus-visible:after{opacity:1}
+.world-door:hover .door-photo,.world-door:focus-visible .door-photo{transform:scale(1.2) translate(var(--door-x,0px),var(--door-y,0px));filter:brightness(1.08)}
+.door-enter{position:relative;z-index:1}
+.original-visual-note{font-size:11px;line-height:1.65;color:#697970;max-width:720px;margin:20px auto 0;text-align:center;padding:0 20px}
+
+/* A restrained simulated flight over the illustrative Sardinian relief. */
+.island-story{grid-column:1/-1;display:grid;grid-template-columns:1.15fr 1fr;gap:0;margin-top:52px;background:#e9eee5}
+.island-visual{position:relative;min-height:640px;overflow:hidden;background:#062a36;color:white;isolation:isolate}
+.island-camera{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.island-camera img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;transform-origin:50% 50%;transform:scale(1.02)}
+.island-visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#08262b55,transparent 25%,transparent 50%,#061f2ce8);z-index:-1;pointer-events:none}
+.island-horizon{position:absolute;left:28px;right:28px;top:26px;display:flex;justify-content:space-between;gap:16px;font-size:10px;line-height:1.5;letter-spacing:1.3px;text-transform:uppercase}
+.flight-phase{text-align:right;max-width:190px;color:#e4c18f}
+.island-tagline{position:absolute;left:32px;right:32px;bottom:90px}
+.island-tagline .eyebrow{color:#e4c18f;font-size:10px}
+.island-tagline h3{font:normal clamp(32px,3.2vw,48px)/1.12 Georgia,serif;color:white;letter-spacing:-1px;margin:16px 0}
+.island-flight{position:absolute;left:32px;bottom:30px;border:1px solid #e4c18f88;color:white;background:#103a4499;border-radius:30px;padding:12px 22px;font:inherit;font-size:12px;cursor:pointer;backdrop-filter:blur(8px)}
+.island-flight:hover{background:#a88a4f;color:white}.island-flight:focus-visible{outline:3px solid #e4c18f;outline-offset:4px}
+.island-copy{padding:42px 36px}.island-copy>.eyebrow{font-size:10px;line-height:1.8}
+.island-copy h3{font:normal clamp(30px,3vw,42px)/1.14 Georgia,serif;letter-spacing:-.7px;margin:18px 0 26px;color:#183b36}.island-copy h3 em{color:#9e854b}
+.company-section .island-copy>p:not(.eyebrow){font-size:14px;line-height:1.8;max-width:none}.island-numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:32px 0 20px;border-top:1px solid #c9d2c3;padding-top:24px}.island-numbers strong{display:block;font:normal clamp(24px,2.7vw,38px) Georgia,serif;letter-spacing:-1px;color:#183b36}.island-numbers span{font-size:11px;color:#607266;display:block;margin-top:8px}
+.company-section .island-copy>p.island-sources{font-size:10px;line-height:1.7;color:#63766b}.island-sources a{text-decoration:underline;text-underline-offset:3px}
+.island-flying .island-camera img{animation:island-flight 12.5s cubic-bezier(.3,.1,.3,1) both}
+@keyframes island-flight{0%{transform:scale(1.02) rotate(0deg)}25%{transform:scale(1.32) rotate(-2deg) translate(-2%,7%)}60%{transform:scale(1.3) rotate(2deg) translate(2%,-5%)}85%{transform:scale(1.18) rotate(1deg) translate(-1%,-3%)}100%{transform:scale(1.02) rotate(0deg)}}
+@media(max-width:1000px){.island-story{grid-template-columns:1fr}.island-visual{min-height:580px}.island-copy{padding:36px}.island-copy h3{max-width:600px}.service-item summary>.service-thumb{width:90px;height:80px;flex-basis:90px}}
+@media(max-width:600px){.service-item summary{gap:14px}.service-item summary>.service-thumb{width:84px;height:84px;flex-basis:84px}.service-item summary>.service-title{font-size:14px}.service-media{height:280px}.island-story{margin-top:28px}.island-visual{min-height:520px}.island-copy{padding:30px 22px}.island-horizon{left:20px;right:20px;font-size:9px;letter-spacing:.7px}.island-tagline{left:24px;right:24px}.island-flight{left:24px}.island-numbers strong{font-size:30px}}
+@media(prefers-reduced-motion:reduce){.service-art{transition:none;transform:none!important}.service-opened .service-media .service-art,.island-flying .island-camera img{animation:none!important}.world-door:hover .door-photo,.world-door:focus-visible .door-photo{transform:none}}
+.motion-paused .service-art{transition:none;transform:none!important}.motion-paused .service-opened .service-media .service-art,.motion-paused .island-flying .island-camera img{animation:none!important}
+
+.island-tagline .eyebrow{color:#e9e1c9;text-shadow:0 2px 12px #173d39}

@@ -57,7 +57,7 @@
   if (window.OTCAudio) audioState(window.OTCAudio.state());
   const journeys = {
     religious: [
-      ['religioso-amplificazione-audio','Amplificazione audio','La parola, più vicina.','Dall’ambone all’ultima fila: microfoni e diffusori per una parola chiara, nel rispetto dell’acustica della chiesa.','Ambone e spazio della parola','78% 76%','78% 58%',2.05],
+      ['religioso-amplificazione-audio','Amplificazione audio','La parola, più vicina.','Dall’ambone all’ultima fila: microfoni e diffusori per una parola chiara, nel rispetto dell’acustica della chiesa.','Microfono e ambone','78% 76%','78% 58%',2.05],
       ['religioso-impianti-elettrici-e-illuminazione','Illuminazione','La luce valorizza il luogo.','Luce e impianti elettrici accompagnano la liturgia e mettono in risalto l’architettura.','Archi e illuminazione','46% 20%','48% 26%',1.7],
       ['religioso-arredi-sacri-e-parrocchiali','Arredi sacri','Ogni gesto trova il suo posto.','Altare, ambone e arredi: soluzioni che dialogano con lo spazio e con la vita della comunità.','Altare e arredi liturgici','58% 72%','59% 60%',1.85]
     ],
@@ -75,7 +75,9 @@
       selected = index; const item = items[index];
       const photo = cinema.querySelector('.cinema-photo');
       photo.classList.remove('cinema-exploring');
-      cinema.style.setProperty('--shot-position', item[5]); cinema.style.setProperty('--shot-origin', item[6]); cinema.style.setProperty('--shot-zoom', item[7]);
+      const artwork = document.getElementById(item[0])?.querySelector('.service-art');
+      if (artwork) photo.replaceChildren(artwork.cloneNode(true));
+      cinema.style.setProperty('--shot-position', '50% 50%'); cinema.style.setProperty('--shot-origin', '50% 50%'); cinema.style.setProperty('--shot-zoom', 1.3);
       cinema.querySelector('.cinema-location').textContent = item[4];
       cinema.querySelector('.cinema-photo').alt = item[4];
       cinema.querySelector('.cinema-count').textContent = `0${index+1} / 03`;
@@ -95,6 +97,23 @@
     cinema.querySelector('.cinema-link').addEventListener('click', () => openService(items[selected][0]));
     cinema.querySelector('.cinema-stage').addEventListener('pointerenter', e => { if(e.pointerType === 'mouse') select(selected); });
     select(0, false);
+  });
+  gateway.querySelectorAll('.world-door').forEach(door => {
+    door.addEventListener('pointermove', e => {
+      if (e.pointerType !== 'mouse' || reduced.matches) return;
+      const r = door.getBoundingClientRect();
+      door.style.setProperty('--door-x', `${((e.clientX-r.left)/r.width-.5)*12}px`);
+      door.style.setProperty('--door-y', `${((e.clientY-r.top)/r.height-.5)*12}px`);
+      door.style.setProperty('--shine-x', `${(e.clientX-r.left)/r.width*100}%`);
+      door.style.setProperty('--shine-y', `${(e.clientY-r.top)/r.height*100}%`);
+    });
+    door.addEventListener('pointerleave', () => { door.style.setProperty('--door-x','0px'); door.style.setProperty('--door-y','0px'); });
+  });
+  document.querySelectorAll('.service-item').forEach(detail => {
+    detail.addEventListener('toggle', () => {
+      detail.classList.remove('service-opened');
+      if(detail.open) { void detail.offsetWidth; detail.classList.add('service-opened'); }
+    });
   });
   const deepLink = () => openService(location.hash.slice(1));
   addEventListener('hashchange', deepLink); deepLink();

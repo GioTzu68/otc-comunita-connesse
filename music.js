@@ -105,7 +105,7 @@
     if (bed?.theme === theme) { scheduleLatin(); return; }
     const wanted = theme, generation = ++bedGeneration; bedLoading = true;
     try {
-      const decoded = await buffer('assets/' + (wanted === 'public' ? 'comunita-civica-loop.wav' : 'cattedrale-loop.wav'));
+      const decoded = await buffer('assets/' + (wanted === 'public' ? 'comunita-loop.wav' : 'cattedrale-loop.wav'));
       if (generation !== bedGeneration || !enabled || !ready() || wanted !== theme) return;
       const source = ctx.createBufferSource(), gain = ctx.createGain();
       source.buffer = decoded; source.loop = true; source.loopStart = 0; source.loopEnd = decoded.duration;

@@ -25,7 +25,7 @@
     sending = true; button.disabled = true; button.textContent = 'Invio in corso…';
     status.textContent = 'Invio della richiesta a OTC…'; status.dataset.error = 'false';
     try {
-      const response = await fetch('https://otc-notify.80.225.86.224.sslip.io/contact', {
+      const response = await fetch('https://otc-notify.77.81.229.206.sslip.io/contact', {
         method:'POST',mode:'cors',credentials:'omit',referrerPolicy:'no-referrer',
         headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:AbortSignal.timeout(30000)
       });

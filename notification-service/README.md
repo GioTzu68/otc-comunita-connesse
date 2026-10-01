@@ -26,3 +26,7 @@ node tests/test_frontend.cjs
 node --check visit.js
 node --check demo-voice.js
 ```
+
+## Aruba migration
+
+The notification and contact endpoint is `https://otc-notify.77.81.229.206.sslip.io`. The existing `menestrello-vps` SSH alias points to the Aruba server. For a new server with the existing private PVP configuration, use `scripts/install-notifications-aruba.sh`; for subsequent code updates, use `scripts/deploy-notifications.sh`. Diagnose connectivity and Telegram configuration with `scripts/check-notifications.sh`.

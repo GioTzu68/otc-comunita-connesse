@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   if (location.origin !== 'https://giotzu68.github.io' || !location.pathname.startsWith('/otc-comunita-connesse/')) return;
-  const endpoint = 'https://otc-notify.80.225.86.224.sslip.io';
+  const endpoint = 'https://otc-notify.77.81.229.206.sslip.io';
   const choiceKey = 'otc-visit-choice-v2', profileKey = 'otc-visitor-v2', sessionKey = 'otc-session-v2';
   const pages = new Set(['servizi-pubblici','servizi-religiosi','azienda','offerte','lavori-eseguiti','assistenza','inizio','soluzioni','menestrello','esperienza','connect','contatti']);
   const uuid = () => crypto.randomUUID().replaceAll('-', '');

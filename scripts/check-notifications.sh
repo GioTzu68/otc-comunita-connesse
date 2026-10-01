@@ -2,9 +2,9 @@
 # Read-only checks; never prints credentials or visitor records.
 set -uo pipefail
 printf 'Endpoint pubblico: '
-curl --fail --silent --show-error --connect-timeout 5 --max-time 12 https://otc-notify.80.225.86.224.sslip.io/health || true
+curl --fail --silent --show-error --connect-timeout 5 --max-time 12 https://otc-notify.77.81.229.206.sslip.io/health || true
 printf '\nControlli sul server:\n'
-ssh -o BatchMode=yes -o ConnectTimeout=10 menestrello-vps 'cd /home/ubuntu/otc-notify && python3 -' <<'PY'
+ssh -o BatchMode=yes -o ConnectTimeout=10 menestrello-vps 'if [ ! -d /home/ubuntu/otc-notify ]; then echo "Servizio OTC non presente in /home/ubuntu/otc-notify"; systemctl is-active caddy nginx 2>/dev/null || true; exit 0; fi; cd /home/ubuntu/otc-notify && python3 -' <<'PY'
 import json, runpy, sqlite3, time, urllib.request, urllib.error
 from pathlib import Path
 try:
